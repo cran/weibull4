@@ -7,7 +7,7 @@ Runs the Metropolis-MCMC algorithm for weibull4 package
 This is an internal function of the weibull4 package
 }
 \usage{
-run_metropolis_MCMC(x, y, startvalue, iterations)
+run_metropolis_MCMC(x, y, startvalue, iterations, modes)
 }
 \arguments{
   \item{x}{
@@ -21,6 +21,9 @@ Vector with starting shape, scale, location, area and SD values for Metropolis-M
 }
   \item{iterations}{
 Number of iterations to be performed in MCMC simulation
+}
+  \item{modes}{
+Sets unimodal (modes=1) or bimodal (modes=2) Weibull's distribution
 }
 }
 \value{

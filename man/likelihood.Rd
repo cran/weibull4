@@ -5,7 +5,7 @@
 \description{Likelihood is an Internal Function of the Weibull4 Package
 }
 \usage{
-likelihood(x, y, param)
+likelihood(x, y, param, modes)
 }
 \arguments{
   \item{x}{
@@ -16,6 +16,9 @@ Vector with the y values
   }
   \item{param}{
 Vector with shape, scale, location, area and SD parameters for calculating the log of Likelihood for the weibull4 package
+}
+  \item{modes}{
+Sets unimodal (modes=1) or bimodal (modes=2) Weibull's distribution
 }
 }
 \value{

@@ -7,7 +7,7 @@ Calculates the posterior distribution for Metropolis-MCMC
 This is an internal function of the weibull4 package
 }
 \usage{
-posterior(x, y, param)
+posterior(x, y, param, modes)
 }
 \arguments{
   \item{x}{
@@ -18,6 +18,9 @@ Vector with the y values
   }
   \item{param}{
 Vector containning shape, scale, location, area and SD parameters
+}
+  \item{modes}{
+Sets unimodal (modes=1) or bimodal (modes=2) Weibull's distribution
 }
 }
 \value{
